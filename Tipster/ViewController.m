@@ -31,9 +31,14 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    //invisible tip and total
-    self.tipLabel.alpha = 0;
-    self.totalLabel.alpha = 0;
+    //invisible tip and total if bill not 0
+    if ([self.billField.text doubleValue]==0) {
+        self.tipLabel.alpha = 0;
+        self.totalLabel.alpha = 0;
+    } else {
+        self.tipLabel.alpha = 1;
+        self.totalLabel.alpha = 1;
+    }
     
     //tip percentage set to default
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
