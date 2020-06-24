@@ -76,9 +76,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="VEM-By-hfH" appends="YES" id="8RK-dU-Nfw"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tips" id="gil-0b-2AM">
                         <barButtonItem key="rightBarButtonItem" title="Settings" image="gear" catalog="system" id="lhA-En-GzE">
@@ -95,11 +92,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="VEM-By-hfH">
-                    <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="rc8-9B-7Lc"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.2" y="105.69715142428787"/>
         </scene>

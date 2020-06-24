@@ -21,8 +21,10 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    [self.billField becomeFirstResponder];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void) didReeiveMemoryWarning {
@@ -30,9 +32,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onTap:(id)sender {
-    [self.view endEditing:YES];
-}
 
 - (IBAction)onEdit:(id)sender {
     double bill = [self.billField.text doubleValue];
